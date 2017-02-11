@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+		var  original = {
+			name: 'Max',
+			age: 22
+		}, 
+			clone = {}; 
+
+		function cloneObj(arr) {
+			
+			for (var key in arr) {
+			  clone[key] = arr[key];
+			}
+			return console.log(clone);
+		}
+
+		cloneObj(original);
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+		var newDiv1 = document.createElement('div');
+		var newDiv2 = document.createElement('div');
+		var newDiv3 = document.createElement('div');
+		var newDiv4 = document.createElement('div');
+		var newDiv5 = document.createElement('div');
+
+		newDiv1.className = "square";
+		newDiv2.className = "square";
+		newDiv3.className = "square";
+		newDiv4.className = "square";
+		newDiv5.className = "square";
+
+		document.body.appendChild(newDiv1);
+		document.body.appendChild(newDiv2);
+		document.body.appendChild(newDiv3);
+		document.body.appendChild(newDiv4);
+		document.body.appendChild(newDiv5);
+
+
+		
+		var divClass = document.getElementsByClassName('square');
+		var i = 0;
+		for (i; i<divClass.length;i++) {
+
+			divClass[i].style.width = 100+'px';
+			divClass[i].style.height = 100+'px';
+			divClass[i].style.backgroundColor = 'red';
+			divClass[i].style.marginTop = 20+'px';
+			divClass[i].onclick = divClass[i].style.backgroundColor = 'blue';
+			
+		}
+
+
+
+	</script>
+	
+</body>
+</html>
